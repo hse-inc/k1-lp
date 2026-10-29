@@ -30,7 +30,7 @@
   --font-body: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
   --font-head: "Noto Sans JP", "Hiragino Sans", system-ui, sans-serif;
   --font-en: "Inter Tight", "Noto Sans JP", sans-serif;
-  --font-brush: "Mochiy Pop One", "Noto Sans JP", sans-serif;   
+  --font-paint: "Genkai P1", "Noto Sans JP", serif;   
   --fs-min: 13px;
   --fs-base: clamp(var(--fs-min), min(2.26dvh, 3.85vw), 15px);
   --fs-ui: max(var(--fs-min), 13px);
