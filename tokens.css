@@ -51,7 +51,7 @@
   --sp-1: 0.45em;                
   --sp-p: 0.8em;                 
   --sp-g: 1.25em;                
-  --pad-y: 1.2em;
+  --pad-y: 2em;   
   --next-h: 0px;
   --radius-pill: 999px;
   --radius-s: 4px;
@@ -64,4 +64,4 @@
   --dur-in: 600ms;
   --dur-hover: 300ms;
 }
-@media (max-height: 600px) { :root { --pad-y: 0.7em; } }
+@media (max-height: 600px) { :root { --pad-y: 1.4em; } }
