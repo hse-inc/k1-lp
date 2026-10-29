@@ -20,7 +20,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,600;0,800;1,800;1,900&family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Inter+Tight:ital,wght@0,600;0,800;1,800;1,900&family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="tokens.css?v=20261029a">
   <link rel="stylesheet" href="base.css?v=20261029a">
   <link rel="stylesheet" href="presets/band-paint.css?v=20261029a">
@@ -31,11 +31,11 @@
   <link rel="stylesheet" href="presets/slide-left.css?v=20261029a">
   <link rel="stylesheet" href="presets/fade-up.css?v=20261029a">
   <link rel="stylesheet" href="presets/ripple.css?v=20261029a">
-  <link rel="stylesheet" href="presets/glitch.css?v=20261029a">
   <link rel="stylesheet" href="style.css?v=20261029a">
 </head>
 <body>
   <svg width="0" height="0" class="defs" aria-hidden="true">
+    <filter id="paint" x="-5%" y="-10%" width="110%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.035 0.7" numOctaves="3" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" xChannelSelector="R" yChannelSelector="G"/></filter>
     <symbol id="ar" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   </svg>
 
@@ -69,13 +69,14 @@
           <figure class="p1__photo photo-tone zoom" aria-hidden="true" data-bleed><img src="assets/photo/recruit.webp?v=20261029a" alt="" width="725" height="467" decoding="async"></figure>
           <p class="p1__flow" aria-hidden="true" data-bleed></p>
           <div class="deco deco--photo rvp" aria-hidden="true" data-bleed>
-            <span class="wind wind--w" style="--y: 1%; --h: 13%"></span>
-            <span class="sq sq--r" style="--x: 9%; --y: 4%; --s: 16px; --d: 0.5s"></span>
-            <span class="sq sq--b" style="--x: 16%; --y: 9%; --s: 9px; --d: 0.62s"></span>
-            <span class="sq sq--line" style="--x: 4%; --y: 12%; --s: 20px; --d: 0.74s"></span>
+            <span class="wind wind--w" style="--y: 2%; --h: 10%"></span>
+            <span class="sq sq--r" style="--x: 88%; --y: 46%; --s: 16px; --d: 0.5s"></span>
+            <span class="sq sq--b" style="--x: 82%; --y: 52%; --s: 9px; --d: 0.62s"></span>
+            <span class="sq sq--line" style="--x: 4%; --y: 52%; --s: 20px; --d: 0.74s"></span>
           </div>
           <div class="page__inner p1">
-            <h2 class="p1__ttl" data-on-photo><span class="ln pf-glitch rvp" data-text="自分を変えたい"><span class="pf-noise" aria-hidden="true"></span><span class="pf-t">自分を変えたい</span></span><span class="ln pf-glitch rvp" data-text="あなたへ"><span class="pf-noise" aria-hidden="true"></span><span class="pf-t">あなたへ</span></span></h2>
+            <p class="page__label en en--s pf-film-in pf-film-in--l rvp" aria-hidden="true" data-on-photo>FOR YOU<span class="en__no">.</span></p>
+            <h2 class="p1__ttl" data-on-photo><span class="ln p1__brush rvp">自分を変えたい</span><span class="ln p1__brush rvp">あなたへ</span></h2>
             <div class="txt p1__txt" data-on-photo>
               <p class="body rv"><span class="ln">仕事が<wbr>終わったのに、<wbr><span class="nb">定時まで残らないといけない。</span></span><span class="ln">自分の<wbr>目標の<wbr>ために<wbr><span class="nb">稼げるようになりたい。</span></span></p>
               <p class="body p1__close rv"><span class="ln">そんな<span class="tag pf-band-paint rvp"><span>「メリハリよく<wbr>働きたい人、<wbr>収入をあげたい人」</span></span><span class="nb">必見です。</span></span></p>
@@ -167,9 +168,9 @@
             <div class="collage" aria-hidden="true" data-bleed>
               <span class="collage__sq collage__sq--1"></span>
               <span class="collage__sq collage__sq--2"></span>
-              <figure class="collage__ph collage__ph--1 photo-tone rv"><img src="assets/photo/recruit.webp?v=20261029a" alt="" width="725" height="467" decoding="async"></figure>
-              <figure class="collage__ph collage__ph--2 photo-tone rv"><img src="assets/photo/misc_04.webp?v=20261029a" alt="" width="725" height="467" decoding="async"></figure>
-              <figure class="collage__ph collage__ph--3 photo-tone rv"><img src="assets/photo/svc_01.webp?v=20261029a" alt="" width="900" height="600" decoding="async"></figure>
+              <figure class="collage__ph collage__ph--1 photo-tone rvp"><img src="assets/photo/recruit.webp?v=20261029a" alt="" width="725" height="467" decoding="async"></figure>
+              <figure class="collage__ph collage__ph--2 photo-tone rvp"><img src="assets/photo/misc_04.webp?v=20261029a" alt="" width="725" height="467" decoding="async"></figure>
+              <figure class="collage__ph collage__ph--3 photo-tone rvp"><img src="assets/photo/svc_01.webp?v=20261029a" alt="" width="900" height="600" decoding="async"></figure>
             </div>
             <div class="txt">
               <p class="body rv"><span class="ln">今まで<wbr>身につけてきた<wbr>経験を<wbr>使いながら、<wbr><span class="nb">さらにできる仕事を</span><wbr>増やしたり、<wbr><span class="nb">業界経験がなくても、</span><wbr><span class="nb">まずは挨拶ができれば大丈夫。</span></span></p>
@@ -187,7 +188,7 @@
 
                 <section class="page page--photo" id="p6" data-tone="dark" data-label="COMPANY" data-next="募集要項">
           <figure class="p6__photo photo-tone zoom" aria-hidden="true" data-bleed><img src="assets/photo/about.webp?v=20261029a" alt="" width="1536" height="760" decoding="async"></figure>
-          <div class="deco deco--photo deco--fan deco--fan-tr rvp" aria-hidden="true" data-bleed>
+          <div class="deco deco--photo deco--fan deco--fan-tr deco--roll rvp" aria-hidden="true" data-bleed>
             <span class="wind wind--w" style="--y: 56%; --h: 13%"></span>
             <span class="sq sq--r" style="--x: 86%; --y: 22%; --s: 16px; --d: 0.5s"></span>
             <span class="sq sq--line" style="--x: 79%; --y: 26%; --s: 24px; --d: 0.62s"></span>

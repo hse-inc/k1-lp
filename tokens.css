@@ -11,7 +11,6 @@
   --color-navy: #1c1e8f;         
   --color-night: #17181c;        
   --color-on-dark: #ffffff;      
-  --color-glitch: #7fd8ff;       
   --color-on-dark-line: rgb(255 255 255 / 0.62);
   --color-veil: rgb(13 14 40 / 0.62);      
   --color-veil-0: rgb(13 14 40 / 0);
@@ -31,6 +30,7 @@
   --font-body: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
   --font-head: "Noto Sans JP", "Hiragino Sans", system-ui, sans-serif;
   --font-en: "Inter Tight", "Noto Sans JP", sans-serif;
+  --font-brush: "Potta One", "Dela Gothic One", sans-serif;   
   --fs-min: 13px;
   --fs-base: clamp(var(--fs-min), min(2.26dvh, 3.85vw), 15px);
   --fs-ui: max(var(--fs-min), 13px);
