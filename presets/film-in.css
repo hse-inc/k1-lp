@@ -1,0 +1,15 @@
+.pf-film-in {
+  --pf-dur: 600ms;
+  --pf-delay: 500ms;
+  --pf-dist: 120%;
+  --pf-ease: cubic-bezier(0.08, 0.82, 0.17, 1);
+  translate: var(--pf-dist) 0;
+}
+.pf-film-in--l { translate: calc(var(--pf-dist) * -1) 0; }
+.pf-film-in.is-on { animation: pf-film-in var(--pf-dur) var(--pf-ease) var(--pf-delay) both; }
+.pf-film-in--l.is-on { animation-name: pf-film-in-l; }
+@keyframes pf-film-in   { from { translate: var(--pf-dist) 0; } to { translate: 0 0; } }
+@keyframes pf-film-in-l { from { translate: calc(var(--pf-dist) * -1) 0; } to { translate: 0 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .pf-film-in, .pf-film-in--l, .pf-film-in.is-on, .pf-film-in--l.is-on { translate: 0 0; animation: none; }
+}

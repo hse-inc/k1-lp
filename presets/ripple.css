@@ -1,0 +1,28 @@
+.pf-ripple {
+  --pf-dur: 2.4s;
+  --pf-delay: 600ms;
+  --pf-spread: 1.25;
+  --pf-ring: #7b5cff;
+  --pf-ring-2: #c9b8ff;
+  --pf-width: 2px;
+  position: relative;
+}
+.pf-ripple::before, .pf-ripple::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: var(--pf-width) solid var(--pf-ring);
+  opacity: 0;
+  pointer-events: none;
+}
+.pf-ripple::after { border-color: var(--pf-ring-2); }
+.pf-ripple.is-on::before { animation: pf-ripple var(--pf-dur) ease-out var(--pf-delay) infinite; }
+.pf-ripple.is-on::after { animation: pf-ripple var(--pf-dur) ease-out calc(var(--pf-delay) + var(--pf-dur) / 2) infinite; }
+@keyframes pf-ripple {
+  from { transform: scale(1); opacity: 0.9; }
+  to   { transform: scale(var(--pf-spread)); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-ripple.is-on::before, .pf-ripple.is-on::after { animation: none; opacity: 0; }
+}

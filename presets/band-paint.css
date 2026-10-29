@@ -1,0 +1,23 @@
+.pf-band-paint {
+  --pf-dur: 520ms;
+  --pf-delay: 0ms;
+  --pf-band: #1fae7a;
+  --pf-ease: cubic-bezier(0.65, 0, 0.35, 1);
+  position: relative;
+  display: inline-block;
+  padding: 0.1em 0.5em;
+}
+.pf-band-paint::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--pf-band);
+  clip-path: inset(0 100% 0 0);
+}
+.pf-band-paint > * { position: relative; z-index: 1; }
+.pf-band-paint.is-on::before { animation: pf-band-paint var(--pf-dur) var(--pf-ease) var(--pf-delay) both; }
+@keyframes pf-band-paint { to { clip-path: inset(0 0 0 0); } }
+@media (prefers-reduced-motion: reduce) {
+  .pf-band-paint::before, .pf-band-paint.is-on::before { clip-path: none; animation: none; }
+}

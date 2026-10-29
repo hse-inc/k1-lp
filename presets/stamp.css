@@ -1,0 +1,20 @@
+.pf-stamp {
+  --pf-dur: 420ms;
+  --pf-delay: 0ms;
+  --pf-from-scale: 2.4;
+  --pf-from-rotate: -8deg;
+  --pf-ease: cubic-bezier(0.2, 1.4, 0.4, 1);
+  opacity: 0;
+}
+.pf-stamp.is-on {
+  opacity: 1;
+  animation: pf-stamp var(--pf-dur) var(--pf-ease) var(--pf-delay) both;
+}
+@keyframes pf-stamp {
+  0%   { opacity: 0; transform: scale(var(--pf-from-scale)) rotate(var(--pf-from-rotate)); }
+  70%  { opacity: 1; transform: scale(0.92); }
+  100% { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-stamp, .pf-stamp.is-on { opacity: 1; animation: none; transform: none; }
+}

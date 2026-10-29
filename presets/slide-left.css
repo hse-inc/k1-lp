@@ -1,0 +1,16 @@
+.pf-slide-left {
+  --pf-dur: 600ms;
+  --pf-dist: 48px;
+  --pf-delay: 0ms;
+  --pf-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  opacity: 0;
+  transform: translateX(calc(var(--pf-dist) * -1));
+}
+.pf-slide-left.is-on {
+  opacity: 1;
+  transform: none;
+  transition: opacity var(--pf-dur) ease var(--pf-delay), transform var(--pf-dur) var(--pf-ease) var(--pf-delay);
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-slide-left, .pf-slide-left.is-on { opacity: 1; transform: none; transition: none; }
+}

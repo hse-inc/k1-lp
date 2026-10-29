@@ -1,0 +1,16 @@
+.pf-fade-up {
+  --pf-dur: 600ms;
+  --pf-rise: 32px;
+  --pf-delay: 0ms;
+  --pf-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  opacity: 0;
+  transform: translateY(var(--pf-rise));
+}
+.pf-fade-up.is-on {
+  opacity: 1;
+  transform: none;
+  transition: opacity var(--pf-dur) ease var(--pf-delay), transform var(--pf-dur) var(--pf-ease) var(--pf-delay);
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-fade-up, .pf-fade-up.is-on { opacity: 1; transform: none; transition: none; }
+}

@@ -1,0 +1,22 @@
+.pf-card-slap {
+  --pf-dur: 560ms;
+  --pf-delay: 380ms;
+  --pf-from-scale: 1.22;
+  --pf-from-rotate: 5deg;
+  --pf-ink: #1a1a2e;
+  --pf-shadow: 4px 5px 0;
+  --pf-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  opacity: 0;
+}
+.pf-card-slap.is-on {
+  animation: pf-card-slap var(--pf-dur) var(--pf-ease) var(--pf-delay) both;
+}
+@keyframes pf-card-slap {
+  0%   { opacity: 0; transform: scale(var(--pf-from-scale)) rotate(var(--pf-from-rotate)) translateY(-10px); box-shadow: 14px 18px 0 color-mix(in srgb, var(--pf-ink) 25%, transparent); }
+  55%  { opacity: 1; transform: scale(0.97) rotate(-0.6deg); box-shadow: 2px 2px 0 var(--pf-ink); }
+  78%  { transform: scale(1.01); }
+  100% { opacity: 1; transform: none; box-shadow: var(--pf-shadow) var(--pf-ink); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-card-slap, .pf-card-slap.is-on { opacity: 1; animation: none; transform: none; box-shadow: var(--pf-shadow) var(--pf-ink); }
+}

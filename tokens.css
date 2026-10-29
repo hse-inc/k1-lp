@@ -1,0 +1,67 @@
+:root {
+  
+  --color-ink: #16171d;          
+  --color-main: #2a2cc4;         
+  --color-main-2: #5a5d6b;       
+  --color-accent: #e52a44;       
+  --color-accent-2: #c8203a;     
+  --color-base: #ffffff;         
+  --color-pale: #eef0f5;         
+  --color-line: #c9ccd8;         
+  --color-navy: #1c1e8f;         
+  --color-night: #17181c;        
+  --color-on-dark: #ffffff;      
+  --color-glitch: #7fd8ff;       
+  --color-on-dark-line: rgb(255 255 255 / 0.62);
+  --color-veil: rgb(13 14 40 / 0.62);      
+  --color-veil-0: rgb(13 14 40 / 0);
+  --color-tex: rgb(255 255 255 / 0.07);    
+  --color-error: #e52a44;        
+  --color-shadow: rgb(13 14 40 / 0.22);
+  --color-shine: rgb(255 255 255 / 0.55);   
+  --color-wm-dark: rgb(255 255 255 / 0.06); 
+  --color-wm-light: rgb(42 44 196 / 0.07);  
+  --color-grid: rgb(42 44 196 / 0.09);      
+
+  
+  --bg-dark: linear-gradient(165deg, var(--color-navy) 0%, var(--color-night) 78%);
+  --bg-accent: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-2) 100%);
+
+  
+  --font-body: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+  --font-head: "Noto Sans JP", "Hiragino Sans", system-ui, sans-serif;
+  --font-en: "Inter Tight", "Noto Sans JP", sans-serif;
+  --fs-min: 13px;
+  --fs-base: clamp(var(--fs-min), min(2.26dvh, 3.85vw), 15px);
+  --fs-ui: max(var(--fs-min), 13px);
+  --fs-input: 16px;
+  --fs-head: 1.72em;             
+  --fs-en: 2.6em;                
+  --fw-body: 500;                
+  --fw-head: 900;
+  --ls-body: 0.04em;
+  --ls-head: 0.06em;
+  --lh-body: 1.8;
+  --lh-head: 1.42;
+
+  
+  --col: 480px;
+  --header-h: 56px;
+  --gutter: 22px;
+  --sp-1: 0.45em;                
+  --sp-p: 0.8em;                 
+  --sp-g: 1.25em;                
+  --pad-y: 1.2em;
+  --next-h: 0px;
+  --radius-pill: 999px;
+  --radius-s: 4px;
+  --shadow-soft: 0 0 10px 0 var(--color-shadow);
+  --shadow-column: 0 0 24px 0 var(--color-shadow);
+
+  
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --rise: 28px;
+  --dur-in: 600ms;
+  --dur-hover: 300ms;
+}
+@media (max-height: 600px) { :root { --pad-y: 0.7em; } }
